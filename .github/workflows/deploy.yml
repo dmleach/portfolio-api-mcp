@@ -70,5 +70,5 @@ jobs:
             set -e
             cd ${{ secrets.DEPLOY_PATH }}
             git pull --ff-only origin main
-            sudo docker compose pull
-            sudo docker compose up -d
+            sudo docker compose -f ${{ secrets.DEPLOY_PATH }}/docker-compose.yml pull
+            sudo docker compose -f ${{ secrets.DEPLOY_PATH }}/docker-compose.yml up -d
