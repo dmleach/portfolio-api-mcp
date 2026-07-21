@@ -1,0 +1,17 @@
+{
+    "name": "dmleach/portfolio-api-mcp",
+    "description": "Portfolio API",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2",
+        "slim/slim": "^4.14",
+        "slim/psr7": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
