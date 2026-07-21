@@ -1,5 +1,5 @@
 services:
   api:
-    build: .
+    image: ghcr.io/dmleach/portfolio-api-mcp:latest
     ports:
       - "127.0.0.1:8000:80"
